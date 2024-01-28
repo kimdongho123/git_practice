@@ -1,0 +1,7 @@
+body{margin: 0;}
+header {background: palevioletred; height: 100px;}
+h1 {text-align: center; color: white; line-height: 100px; margin: 0;}
+.flexbox {display: flex; flex-wrap: wrap; max-width: 1200px; justify-content: center; align-items: center;}
+article {padding: 10px; margin: 10px; background-color: aqua; display: block; flex: 1 200px;}
+
+article:nth-last-of-type(3) {flex: 2 400px; background-color: blue; flex-direction:c;}

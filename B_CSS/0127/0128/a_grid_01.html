@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS grid</title>
+  <link rel="stylesheet" href="./styles/a_grid_01.css">
+</head>
+<body>
+  <!-- ! CSS Grid -->
+  <!-- 2차원 레이아웃을 위한 시스템 -->
+  <!-- 행과 열을 동시에 다룸 -->
+  <!-- 수평선과 수직선으로 이루어진 집합체 -->
+  <!-- ! CSS Grid의 기본 개념 (구조) -->
+  <!-- 1. Grid Container : 그리드 레이아웃을 적용할 요소-->
+    <!-- 2. Grid Item : 그리드 컨테이너 내에 있는 자식 요소-->
+      <!-- 3. Grid Line:  Grid의 선, 행과 열을 구분-->
+      <!-- 4. Grid Track:  Grid Line 사이의 공간 (행 또는 열)-->
+      <!-- 5. Grid Cell:  한 개의 행과 열에 의해 만들어진 공간-->
+      <!-- 6. Grid Area:  여러 개의 Grid Cell을 합친 부분 -->
+<!-- ! Grid Container 지정 -->
+<!-- display : grid 
+한 열 그리드가 생성 (생성)
+>> 다른항목 아래에 계속 표시
+
+Grid에 열 추가
+?grid-template-column 속성 > 그리드의 열의 크기와 개수 정의 
+?grid-template-rows 속성 > 그리드의 행의 크기와 개수 정의 -->
+
+<!-- ! 명시적 그리드와/ 암시적 그리드 -->
+<!-- ? 명시적 그리드 -->
+<!-- grid-template-colums 또는
+grid-template-rows를 사용하여 생성한 트랙 -->
+<!-- ? 암시적 그리드 -->
+<!-- 컨텐츠가 명시적으로 지정된 그리드 외부에 배치될 때 추가 그리드 선을 그어 확장되는 트랙 
+: 기본 크기값 'uto' 지정
+: 암시적 그리드 크기 지정 속성
+: grid-auto-rows, grid-auto-colums-->
+
+<!-- ?? minmax(..) -->
+<!-- 트랙(행/열)의 최소 및 최대 크기를 지정 -->
+<!-- minmax(최소,최대) -->
+      <h1>Simple Grid EAXMPLE</h1>
+      
+      <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+      </div>
+</body>
+</html>

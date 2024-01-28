@@ -1,0 +1,10 @@
+body {width: 90%; max-width: 900px; margin: 20px auto;}
+.container > div {padding:10px; background-color: skyblue; border: 2px solid coral; border-radius: 5px;}
+.container {display: grid; grid-template-columns: repeat(3,1fr); 
+
+  /* 암시적(행) 그리드 크기 지정 */
+  grid-auto-rows: 100px;
+  
+  grid-auto-rows: minmax(100px,auto);
+}
+
